@@ -1,0 +1,8 @@
+{% extends "news/base.html" %}
+{% block title %}Article of Programming Languages for {{ year }}{% endblock %}
+{% block content %}
+    <h1>Article for {{ year }}</h1>
+        <p><strong>Headline:</strong> {{ headline }}</p>
+        <p><strong>Reported by:</strong> {{ reporter }}</p>
+        <p><strong>Date Published:</strong> Date: {{published_date|date:"F j, Y" }}</p>
+{% endblock %}

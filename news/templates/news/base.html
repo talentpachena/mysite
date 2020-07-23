@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Article of Programming Languages{% endblock %}</title>
+</head>
+<body>
+    <p>
+        <img src="{% static "img/prog_lang.jpg" %}" alt="" width="600" height="300" class="myAnim" style="padding-top:100px; padding-left:100px "/></a>
+        <h1>Articles of Programming Languages</h1>
+    </p>
+    {% block content %}{% endblock %}
+</body>
+</html>
